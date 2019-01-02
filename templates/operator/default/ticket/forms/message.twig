@@ -97,7 +97,7 @@
                 {% include 'operator.' ~ template ~ '.ticket.forms.message_attachments' with { 'ticket': ticket, 'message': draft } %}
             </div>
 
-            {% include 'operator.' ~ template ~ '.ticket.forms.message_submit' with { 'submit_name': Lang.get('ticket.post_reply') } %}
+            {% include 'operator.' ~ template ~ '.ticket.forms.message_submit' with { 'submit_name': Lang.get('ticket.post_reply'), 'extraval': 'return confirm("Are you sure you wish to reply to the customer?")' } %}
         </div>
     </form>
 

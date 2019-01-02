@@ -31,7 +31,7 @@
 
                 <div class="form-row">
                     {% if Config.get('settings.ldap_enabled', 0) %}
-                        {% set emailPlaceholder = Lang.get('general.email') ~ '/' ~ Lang.get('general.username') %}
+                        Enter your Windows Username firstname.lastname<br><br> Your email address will not work!
                     {% else %}
                         {% set emailPlaceholder = Lang.get('general.email') %}
                     {% endif %}
@@ -60,7 +60,6 @@
                 </label>
             </span>
             <span class="right">
-                <a class="forgotToggle">{{ Lang.get('user.forgot_password') }}</a>
             </span>
             <div class="clear"></div>
         {% endif %}

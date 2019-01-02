@@ -1,1 +1,46 @@
-#privateMessages {display: none};
+#privateMessages {
+    display: none
+}
+
+#main {
+    background-color: #9fc6f5;
+}
+
+#main .desk_content_padding {
+    margin:25px;
+    background-color: #fff;
+}
+
+#ticketGridTable tbody tr td {
+    background-color:#f5fb6d;
+}
+
+#ticketGridTable tbody tr.ticket-viewed.odd td {
+    background-color:#bdeafd;
+}
+
+#ticketGridTable tbody tr.ticket-viewed.even td {
+    background-color:#dbfbd2;
+}
+
+#tabMessages .message.note {
+    background-color:#0c38c5;
+}
+
+#tabMessages .message.note.collapsible {
+    color: #fff;
+}
+
+#tabMessages .message {
+   border-bottom: 2px solid #000;
+}
+
+.note {
+    border-left: 0px;
+}
+
+div.collapsed-messages span {
+    background-color: #00abff !important; 
+    color: #fff;
+    border: 1px solid #000;
+}

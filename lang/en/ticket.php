@@ -24,8 +24,8 @@ return array(
     "created_time"              => "Created Time",
     "submitted"                 => "Submitted",
     "add_reply"                 => "Add Reply",
-    "ticket_reply"              => "Ticket Reply",
-    "ticket_note"               => "Ticket Note",
+    "ticket_reply"              => "Ticket Reply (Customer)",
+    "ticket_note"               => "Ticket Note (Private)",
     "ticket_type"               => "Ticket Type",
 
     "user_ticket"               => "User Ticket",
