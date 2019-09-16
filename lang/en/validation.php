@@ -79,7 +79,6 @@ return array(
     "json"                      => "The :attribute must be valid JSON.",
     "user_password_strength"    => "The :attribute must contain: :user_password_strength.",
     "operator_password_strength" => "The :attribute must contain: :operator_password_strength.",
-    "twig_lint"                 => "The :attribute must be valid twig syntax, please check http://twig.sensiolabs.org/doc/templates.html",
 
     /*
      * 2.1.0
@@ -91,30 +90,26 @@ return array(
      * 2.1.1
      */
     "old_password"              => "The :attribute field is invalid.",
-    
+
     /*
      * 2.2.0
      */
     "required_with_translation" => "The :translation translation for the :attribute field is required when :values is present.",
     "max_translation"           => "The :translation translation for the :attribute field may not be greater than :max characters.",
     "unique_translation"        => "The :translation translation for the :attribute field has already been taken.",
-    
+
     /*
      * 2.3.0
      */
     "required_translation"      => "The :translation translation for the :attribute field is required.",
     "customfield_not_cyclic"    => "The field cannot depend on one of it's children.",
     "distinct"                  => "The :attribute field has a duplicate value.",
-    
+
     /*
      * 2.3.1
      */
     "is_slug"                   => "The slug field can only contain alphanumeric characters, please percent encode any special characters.",
-    "article_type_slug_unique"  => "The slug has already been taken.",
-    "article_tag_slug_unique"   => "The slug has already been taken.",
-    "article_category_slug_unique" => "The slug has already been taken.",
     "article_slug_unique"       => "The slug has already been taken.",
-    "department_exists"         => "The selected department is invalid.",
     "captcha_required"          => "The captcha is required.",
     "ticket_number_format"      => "The ticket number format is invalid.",
 
@@ -164,6 +159,16 @@ return array(
     "uploaded"                  => "The :attribute failed to upload.",
 
     /*
+     * 2.5.0
+     */
+    "domain"                    => "One or more of the domain names are not valid.",
+
+    /*
+     * 2.5.1
+     */
+    "valid_twig"                => "The :attribute is invalid. Please use the 'Preview' button for error details.",
+
+    /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
     |--------------------------------------------------------------------------
@@ -187,19 +192,6 @@ return array(
         ),
         "brand.*" => array(
             "exists" => "The selected brand is invalid.",
-        ),
-        "signature.*.*.contents" => array(
-            "twig_lint" => "Each signature must be valid twig syntax, please check http://twig.sensiolabs.org/doc/templates.html"
-        ),
-        "template.*.*.subject" => array(
-            "required" => "The subject field is required for each email.",
-            "min" => "Each subject field must be greater than 1 character.",
-            "max" => "Each subject field must be less than 255 characters.",
-        ),
-        "template.*.*.contents" => array(
-            "required" => "The contents field is required for each email.",
-            "min" => "Each contents field must be greater than 1 character.",
-            "twig_lint" => "Each contents field must be valid twig syntax, please check http://twig.sensiolabs.org/doc/templates.html"
         ),
     ),
 
